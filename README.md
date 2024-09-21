@@ -87,7 +87,7 @@ You can build yourself this after installing some dependencies including `dkms`.
 sudo apt install devscripts debmake debhelper build-essential dkms
 ```
 
-**Note**: On Ubuntu 24.04 (noble), `dh-dkms` is a build dependency.
+**Note**: On Ubuntu 24.04 (noble), `dh-dkms` is also a build dependency.
 
 ```bash
 dpkg-buildpackage -b -rfakeroot -us -uc
