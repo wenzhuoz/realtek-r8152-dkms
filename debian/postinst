@@ -9,8 +9,7 @@ set -e
 
 NAME=realtek-r8152
 PACKAGE_NAME=$NAME-dkms
-DEB_NAME=$(echo $PACKAGE_NAME | sed 's,_,-,')
-CVERSION=`dpkg-query -W -f='${Version}' $DEB_NAME | awk -F "-" '{print $1}' | cut -d\: -f2`
+VERSION=`dpkg-query -W -f='${Version}' $PACKAGE_NAME | awk -F "-" '{print $1}'`
 ARCH=`dpkg --print-architecture`
 
 msg() {
@@ -20,7 +19,7 @@ msg() {
 dkms_configure () {
 	for POSTINST in /usr/lib/dkms/common.postinst "/usr/share/$PACKAGE_NAME/postinst"; do
 		if [ -f "$POSTINST" ]; then
-			"$POSTINST" "$NAME" "$CVERSION" "/usr/share/$PACKAGE_NAME" "$ARCH" "$2"
+			"$POSTINST" "$NAME" "$VERSION" "/usr/share/$PACKAGE_NAME" "$ARCH" "$2"
 			return $?
 		fi
 		msg "WARNING: $POSTINST does not exist." >&2

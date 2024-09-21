@@ -1,3 +1,12 @@
+realtek-r8152-dkms (2.18.1-2ubuntu2) noble; urgency=medium
+
+  * Enable compiling for intended kernel versions
+  * dkms.conf: bump version number and remove deprecated REMAKE_INITRD
+  * Update README 
+  * Determine version numbers in maintainer scripts
+
+ -- Wenzhuo Zhang <wenzhuo@gmail.com>  Sat, 21 Sep 2024 19:57:55 +0800
+
 realtek-r8152-dkms (2.18.1-1) stable; urgency=medium
 
   * Update Realtek r8152 driver to 2.18.1

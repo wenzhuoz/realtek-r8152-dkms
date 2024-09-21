@@ -4,7 +4,8 @@
 set -e
 
 NAME=realtek-r8152
-VERSION=2.17.1
+PACKAGE_NAME=$NAME-dkms
+VERSION=`dpkg-query -W -f='${Version}' $PACKAGE_NAME | awk -F "-" '{print $1}'`
 
 msg() {
 	echo "realtek-r8152-dkms: $@"

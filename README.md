@@ -1,6 +1,6 @@
 # Realtek r8152 DKMS
 
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/awesometic/realtek-r8152-dkms?sort=semver&style=for-the-badge)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/wenzhuoz/realtek-r8152-dkms?sort=semver&style=for-the-badge)
 
 This provides Realtek r8152 driver in DKMS way so that you can keep the latest driver even after the kernel upgrade.
 
@@ -86,6 +86,8 @@ You can build yourself this after installing some dependencies including `dkms`.
 ```bash
 sudo apt install devscripts debmake debhelper build-essential dkms
 ```
+
+**Note**: On Ubuntu 24.04 (noble), `dh-dkms` is a build dependency.
 
 ```bash
 dpkg-buildpackage -b -rfakeroot -us -uc
