@@ -92,7 +92,7 @@ sudo ./dkms-install.sh
 You can build yourself this after installing some dependencies including `dkms`.
 
 ```bash
-sudo apt install devscripts debmake debhelper build-essential dkms
+sudo apt install devscripts debmake debhelper build-essential dkms dh-dkms
 ```
 
 **Note**: On Ubuntu 24.04 (noble), `dh-dkms` is also a build dependency.
