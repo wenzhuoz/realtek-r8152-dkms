@@ -1,3 +1,9 @@
+realtek-r8152-dkms (2.19.2-1ubuntu1) noble; urgency=medium
+
+   * Update Realtek r8152 driver to 2.19.2 (2024/10/21)
+
+ -- Wenzhuo Zhang <wenzhuo@gmail.com>  Fri, 11 Apr 2025 21:32:57 +0800
+
 realtek-r8152-dkms (2.18.1-2ubuntu2) noble; urgency=medium
 
   * Enable compiling for intended kernel versions
