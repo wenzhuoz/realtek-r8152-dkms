@@ -32,16 +32,11 @@ dkms_configure () {
 }
 
 udev_configure() {
-	msg "Installing udev rules to prevent from loading built-in old driver..."
-	cp -f /tmp/realtek-r8152-dkms/rules.d/50-usb-realtek-net.rules /etc/udev/rules.d/
-
-	msg "Reload udev..."
-	[ -x "$(command -v udevadm)" ] \
-		&& udevadm trigger \
-		|| msg "udevadm not found. Please reboot to take effect."
-
-	msg "Remove temporary files..."
-	rm -rf /tmp/realtek-r8152-driver
+	msg "Reload udev rules..."
+	[ -x "$(command -v udevadm)" ] && {
+		udevadm control --reload
+		udevadm trigger
+	} || msg "udevadm not found. Please reboot to take effect."
 }
 
 case "$1" in

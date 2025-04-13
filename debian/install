@@ -1,1 +1,1 @@
-udev/rules.d		tmp/realtek-r8152-dkms
+udev/rules.d/50-usb-realtek-net.rules		usr/lib/udev/rules.d/
