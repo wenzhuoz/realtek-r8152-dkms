@@ -14,6 +14,7 @@ The r8152 driver supports the following USB Ethernet chipsets.
 
 Chipset          | Interface   | Performance
 :----------------|:-----------:|:----------------:
+RTL8159          | USB 3.0     | 10G GbE
 RTL8157          | USB 3.0     | 5 GbE
 RTL8156 /B       | USB 3.0     | 2.5 GbE
 RTL8153 /B/C/D/E | USB 3.0     | 10/100/1000 MbE
