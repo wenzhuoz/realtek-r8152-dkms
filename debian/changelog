@@ -1,8 +1,9 @@
-realtek-r8152-dkms (2.19.2-1ubuntu2) UNRELEASED; urgency=medium
+realtek-r8152-dkms (2.19.2-2ubuntu1) noble; urgency=medium
 
   * Move 50-usb-realtek-net.rules to the udev system rules directory
+  * Update README
 
- -- Wenzhuo Zhang <wenzhuo@gmail.com>  Sun, 13 Apr 2025 14:18:46 +0800
+ -- Wenzhuo Zhang <wenzhuo@gmail.com>  Fri, 18 Apr 2025 16:09:00 +0800
 
 realtek-r8152-dkms (2.19.2-1ubuntu1) noble; urgency=medium
 
