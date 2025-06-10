@@ -1,3 +1,11 @@
+realtek-r8152-dkms (2.20.1-1) noble; urgency=medium
+
+  * Update Realtek r8152 driver to 2.20.1 (2025/05/13)
+  * Move upstream source files back to the same folder (src/)
+  * Blacklist r8153_ecm 
+
+ -- Wenzhuo Zhang <wenzhuo@gmail.com>  Mon, 09 Jun 2025 09:50:08 +0800
+
 realtek-r8152-dkms (2.19.2-2ubuntu1) noble; urgency=medium
 
   * Move 50-usb-realtek-net.rules to the udev system rules directory
