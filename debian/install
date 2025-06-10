@@ -1,1 +1,2 @@
-udev/rules.d/50-usb-realtek-net.rules		usr/lib/udev/rules.d/
+src/50-usb-realtek-net.rules		usr/lib/udev/rules.d/
+debian/modprobe.d/realtek-r8152-dkms.conf	etc/modprobe.d/

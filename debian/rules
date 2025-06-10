@@ -9,7 +9,7 @@ VERSION	:= $(shell dpkg-parsechangelog -S Version | sed 's/-.*//' | sed 's/+pris
 	dh $@ --parallel --with dkms
 
 override_dh_install:
-	dh_install dkms.conf REALTEK_README.txt Makefile usr/src/realtek-r8152-$(VERSION)
+	dh_install dkms.conf Makefile usr/src/realtek-r8152-$(VERSION)
 	dh_install src/* usr/src/realtek-r8152-$(VERSION)/src
 
 override_dh_dkms:
