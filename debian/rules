@@ -22,6 +22,10 @@ override_dh_fixperms:
 override_dh_builddeb:
 	dh_builddeb -- -Zxz
 
+override_dh_installdeb:
+	dh_installdeb
+	rm debian/realtek-r8152-dkms/DEBIAN/conffiles
+
 # Nothing to configure, build or auto-install
 override_dh_auto_configure:
 override_dh_auto_build:
