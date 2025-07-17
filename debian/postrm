@@ -9,8 +9,6 @@ msg() {
 
 case "$1" in
 	purge)
-		rm -f /etc/udev/rules.d/50-usb-realtek-net.rules
-
 		msg "Reload udev rules..."
 		[ -x "$(command -v udevadm)" ] && {
 			udevadm control --reload
