@@ -1,3 +1,9 @@
+realtek-r8152-dkms (2.20.2) UNRELEASED; urgency=medium
+
+  * New upstream version 2.20.2 
+
+ -- Wenzhuo Zhang <wenzhuo@gmail.com>  Thu, 19 Jun 2025 06:09:27 +0800
+
 realtek-r8152-dkms (2.20.1-1) noble; urgency=medium
 
   * Update Realtek r8152 driver to 2.20.1 (2025/05/13)
